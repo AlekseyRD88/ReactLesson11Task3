@@ -6,12 +6,12 @@ class App extends Component {
   state = {
     isOpen: false,
   }
-  hideArrow = () => {
+  hideText = () => {
     this.setState({
       isOpen: false,
     })
   }
-  showArrow = () => {
+  showText = () => {
     this.setState({
       isOpen: true,
     })
@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return(
       <div className="app">
-        <Expand isOpen={this.state.isOpen} onClick={this.hideArrow} title="some title">
+        <Expand isOpen={this.state.isOpen} onClick={this.hideText} title="some title">
         <p>Some text</p>
         </Expand>
       </div>
