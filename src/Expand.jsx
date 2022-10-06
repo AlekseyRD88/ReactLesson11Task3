@@ -18,7 +18,8 @@ class Expand extends Component {
     })
   }
   render() {
-    const { isOpen, title, children } = this.state;
+    const { isOpen } = this.state;
+    const { title, children } = this.props;
     return(
       <div className="expand border">
           <div className="expand__header">
